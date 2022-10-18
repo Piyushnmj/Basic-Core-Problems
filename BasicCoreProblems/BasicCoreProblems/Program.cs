@@ -1,17 +1,25 @@
-﻿class EvenOrOdd
+﻿class LargestNum
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter a number: ");
-        int num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a value for x: ");
+        int x = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a value for y: ");
+        int y = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a value for z: ");
+        int z = Convert.ToInt32(Console.ReadLine());
 
-        if (num%2==0)
+        if (x > y && x > z)
         {
-            Console.WriteLine("Number is Even");
+            Console.WriteLine("x is greater");
+        }
+        else if (y > x && y > z)
+        {
+            Console.WriteLine("y is greater");
         }
         else
         {
-            Console.WriteLine("Number is Odd");
+            Console.WriteLine("z is greater");
         }
         Console.ReadLine();
     }
