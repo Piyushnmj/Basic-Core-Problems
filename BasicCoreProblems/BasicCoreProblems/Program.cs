@@ -1,25 +1,30 @@
-﻿class LargestNum
+﻿class VowelOrConsonant
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter a value for x: ");
-        int x = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter a value for y: ");
-        int y = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter a value for z: ");
-        int z = Convert.ToInt32(Console.ReadLine());
-
-        if (x > y && x > z)
+        Console.WriteLine("Enter any Alphabet: ");
+        char alphabet = Convert.ToChar(Console.ReadLine().ToLower());
+        
+        switch (alphabet)
         {
-            Console.WriteLine("x is greater");
-        }
-        else if (y > x && y > z)
-        {
-            Console.WriteLine("y is greater");
-        }
-        else
-        {
-            Console.WriteLine("z is greater");
+            case 'a':
+                Console.WriteLine("Alphabet is Vowel");
+                break;
+            case 'e':
+                Console.WriteLine("Alphabet is Vowel");
+                break;
+            case 'i':
+                Console.WriteLine("Alphabet is Vowel");
+                break;
+            case 'o':
+                Console.WriteLine("Alphabet is Vowel");
+                break;
+            case 'u':
+                Console.WriteLine("Alphabet is Vowel");
+                break;
+            default:
+                Console.WriteLine("Alphabet is Consonant");
+                break;
         }
         Console.ReadLine();
     }
