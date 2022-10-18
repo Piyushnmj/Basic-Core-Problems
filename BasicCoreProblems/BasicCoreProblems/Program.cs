@@ -2,24 +2,31 @@
 {
     static void Main(String[] args)
     {
+        double tails = 0;
         double heads = 0;
-        int coinFlipLoop = 1;
-        
-        while (coinFlipLoop <= 10000)
+        int loopCount = 1;
+
+        while (loopCount <= 10000)
         {
             Random random = new Random();
-            int coinFlip = random.Next(0, 2);
+            double coinFlip = random.Next(0, 2);
 
-            if (coinFlip <= .5)
+            if (coinFlip < 0.5)
+            {
+                tails++;
+            }
+            else
+            {
                 heads++;
+            }
 
-            coinFlipLoop = coinFlipLoop + 1;
+            loopCount = loopCount + 1;
         }
-        double percentHeads = (heads / 10000) * 100;
-        double percentTails = ((10000 - heads) / 10000) * 100;
+        double percentTails = (tails / loopCount) * 100;
+        double percentHeads = (heads / loopCount) * 100;
 
-        Console.WriteLine("The percentage of heads is: " + percentHeads);
-        Console.WriteLine("The percentage of tails is: " + percentTails);
+        Console.WriteLine("The percentage of heads is: " + percentHeads + " % ");
+        Console.WriteLine("The percentage of tails is: " + percentTails + " % ");
         Console.ReadLine();
     }
 }
