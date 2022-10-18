@@ -13,6 +13,6 @@
         {
             Console.WriteLine("Number is Odd");
         }
-        Console.ReadKey();
+        Console.ReadLine();
     }
 }
