@@ -1,15 +1,18 @@
-class Powerof2
+class HarmonicNumber
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter the power value: ");
-        long N = Convert.ToInt32(Console.ReadLine());
-        int num = 2;
-        for (var i = 0; i < N; i++)
+        float count;
+        float sum = 0;
+
+        Console.WriteLine("Enter the value of N: ");
+        int N = Convert.ToInt32(Console.ReadLine());
+        for (count = 1; count <= N; count++)
         {
-            Console.WriteLine(num);
-            num = num * 2;
+            Console.WriteLine("1/{0} + ", count);
+            sum += 1 / count;
         }
+        Console.WriteLine("Sum of series of {0} terms: {1}", N, sum);
         Console.ReadLine();
     }
 }
