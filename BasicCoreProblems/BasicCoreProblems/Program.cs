@@ -1,31 +1,17 @@
-﻿class VowelOrConsonant
+﻿class QuotientAndRemainder
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter any Alphabet: ");
-        char alphabet = Convert.ToChar(Console.ReadLine().ToLower());
-        
-        switch (alphabet)
-        {
-            case 'a':
-                Console.WriteLine("Alphabet is Vowel");
-                break;
-            case 'e':
-                Console.WriteLine("Alphabet is Vowel");
-                break;
-            case 'i':
-                Console.WriteLine("Alphabet is Vowel");
-                break;
-            case 'o':
-                Console.WriteLine("Alphabet is Vowel");
-                break;
-            case 'u':
-                Console.WriteLine("Alphabet is Vowel");
-                break;
-            default:
-                Console.WriteLine("Alphabet is Consonant");
-                break;
-        }
+        Console.WriteLine("Enter a Dividend: ");
+        int dividend = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a Divisor: ");
+        int divisor = Convert.ToInt32(Console.ReadLine());
+
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+
+        Console.WriteLine("Quotient = " + quotient);
+        Console.WriteLine("Remainder = " + remainder);
         Console.ReadLine();
     }
 }
