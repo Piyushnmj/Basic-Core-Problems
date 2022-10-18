@@ -2,19 +2,21 @@
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter value of a: ");
-        int a = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter value of b: ");
-        int b = Convert.ToInt32(Console.ReadLine());
-        int temp;
+        Console.WriteLine("Enter a value: ");
+        int N = Convert.ToInt32(Console.ReadLine());
+        int i = 0;
 
-        Console.WriteLine("Before Swapping: Value of a={0}, b={1}", a, b);
-
-        temp = a;
-        a = b;
-        b = temp;
-
-        Console.WriteLine("After Swapping: Value of a={0}, b={1}", a, b);
+        for (i = 1; i <= N; i++)
+        {
+            if ( N % i == 0)
+            {
+                Console.WriteLine(i + " is a Factor of " + N);
+            }
+            else
+            {
+                Console.WriteLine(i + " is not a Factor of " + N);
+            }
+        }
         Console.ReadLine();
     }
 }
