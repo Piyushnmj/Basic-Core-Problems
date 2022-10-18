@@ -10,6 +10,6 @@ class Powerof2
             Console.WriteLine(num);
             num = num * 2;
         }
-        
+        Console.ReadLine();
     }
 }
