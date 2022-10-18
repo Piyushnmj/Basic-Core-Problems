@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿class Swap2Num
 {
     static void Main(String[] args)
@@ -16,6 +17,19 @@
             {
                 Console.WriteLine(i + " is not a Factor of " + N);
             }
+=======
+﻿class Powerof2
+{
+    static void Main(String[] args)
+    {
+        Console.WriteLine("Enter the power value: ");
+        long N = Convert.ToInt32(Console.ReadLine());
+        int num = 2;
+        for (var i = 0; i < N; i++)
+        {
+            Console.WriteLine(num);
+            num = num * 2;
+>>>>>>> PowerOf2
         }
         Console.ReadLine();
     }
