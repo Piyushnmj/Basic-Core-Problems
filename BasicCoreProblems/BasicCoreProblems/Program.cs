@@ -1,18 +1,18 @@
-﻿class LeapYear
+﻿class Swap2Num
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("Enter the Year in 4 digits: ");
-        int Year = Convert.ToInt32(Console.ReadLine());
+        int a = 10;
+        int b = 30;
+        int temp;
+        
+        Console.WriteLine("Before Swapping: Value of a={0}, b={1}", a, b);
 
-        if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
-        {
-            Console.WriteLine("{0} is a Leap Year", Year);
-        }
-        else
-        {
-            Console.WriteLine("{0} is not a Leap Year", Year);
-        }
+        temp = a;
+        a = b;
+        b = temp;
+
+        Console.WriteLine("After Swapping: Value of a={0}, b={1}", a, b);
         Console.ReadLine();
     }
 }
