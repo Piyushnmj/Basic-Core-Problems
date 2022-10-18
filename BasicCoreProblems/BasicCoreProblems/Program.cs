@@ -1,4 +1,4 @@
-﻿class Swap2Num
+﻿class Factors
 {
     static void Main(String[] args)
     {
