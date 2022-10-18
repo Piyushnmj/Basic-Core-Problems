@@ -1,18 +1,18 @@
-﻿class Swap2Num
+﻿class EvenOrOdd
 {
     static void Main(String[] args)
     {
-        int a = 10;
-        int b = 30;
-        int temp;
-        
-        Console.WriteLine("Before Swapping: Value of a={0}, b={1}", a, b);
+        Console.WriteLine("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine());
 
-        temp = a;
-        a = b;
-        b = temp;
-
-        Console.WriteLine("After Swapping: Value of a={0}, b={1}", a, b);
-        Console.ReadLine();
+        if (num%2==0)
+        {
+            Console.WriteLine("Number is Even");
+        }
+        else
+        {
+            Console.WriteLine("Number is Odd");
+        }
+        Console.ReadKey();
     }
 }
